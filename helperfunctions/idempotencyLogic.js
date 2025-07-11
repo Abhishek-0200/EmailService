@@ -3,7 +3,7 @@ const pendingRequests = new Set();
 
 function isDuplicate(requestId) {
   return sentRequests.has(requestId) 
-  // || pendingRequests.has(requestId);
+  || pendingRequests.has(requestId);
 }
 
 function markAsInProgressRequest(requestId) {
