@@ -4,8 +4,8 @@ class MockProvider1 {
   }
 
   async send({ to, subject, body }) {
-    // Simulate success/failure
-    if (1 < 0.7) return true;
+    
+    if (Math.random() < 0.7) return true;
     throw new Error('MockProvider1 failed');
   }
 }
