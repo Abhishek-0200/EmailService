@@ -5,7 +5,7 @@ const emailService = new EmailService();
 
 
 (function () {
-    for(let i =0;i<5;i++)
+    for(let i =0;i<10;i++)
 {
 emailService.sendEmail( {
        requestId: `requestedId-${i+1}`,
